@@ -22,7 +22,7 @@ import net.md_5.bungee.api.CommandSender;
     name = "crazymotd",
     aliases = {"crazyMotd", "motd"}
 )
-@Permission({"crazymotd.cmd"})
+@Permission("crazymotd.cmd")
 public class CrazyMotdCommand {
 
   private final BungeeMotd plugin;

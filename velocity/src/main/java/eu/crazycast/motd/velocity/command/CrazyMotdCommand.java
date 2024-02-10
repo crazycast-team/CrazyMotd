@@ -18,7 +18,7 @@ import net.kyori.adventure.text.JoinConfiguration;
     name = "crazymotd",
     aliases = {"crazyMotd", "motd"}
 )
-@Permission({"crazymotd.cmd"})
+@Permission("crazymotd.cmd")
 public class CrazyMotdCommand {
 
   private final VelocityMotd plugin;
