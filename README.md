@@ -2,35 +2,13 @@
 
 # 📝 CrazyMotd [![Release](https://img.shields.io/github/release/crazycast-team/CrazyMotd.svg)](https://github.com/crazycast-team/CrazyMotd/releases)
 
-[CrazyMotd](https://wiki.crazycast.eu/crazymotd) is a simple plugin to support MOTD of minecraft servers.
+CrazyMotd is a simple plugin to support MOTD of minecraft servers.
 </br>
 
-Although it is simple it has interesting options to make your MOTD look better!
+It supports the [velocity](https://papermc.io/downloads/velocity) and [bungeecord](https://ci.md-5.net/job/BungeeCord/) platforms.
+</br>
 
-## Requirements
-### a) For velocity
-- Java 17 or higher
-- [Velocity](https://papermc.io/downloads/velocity) (Preferably the latest version)
-### b) For bungeecord
-- Java 8 or higher
-- [Bungeecord](https://ci.md-5.net/job/BungeeCord/) (Preferably the latest version)
+Although it is simple it has interesting options to make your MOTD look better! The plugin supports [minimessage](https://docs.advntr.dev/minimessage/format.html) formatting.
+<br>
 
-## Installation
-
-1. Put jar file into folder /plugins/
-2. Restart the server.
-3. Start your first configuration.
-
-## Commands & Permissions
-
-### a) Commands
-```
-/crazymotd reload - Reloads plugin configuration
-```
-
-### b) Permissions
-```
-1. crazymotd.cmd - Allows you to use the /crazymotd command
-2. crazymotd.update_notify - Informs person upon entry of new update
-```
-
+## 👾 All the information is on our [wiki](https://wiki.crazycast.eu/crazymotd/informations)!
