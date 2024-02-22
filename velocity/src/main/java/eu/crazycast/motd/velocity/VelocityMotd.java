@@ -31,7 +31,6 @@ import java.io.File;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.Optional;
-import org.bstats.bukkit.Metrics;
 import org.bstats.velocity.Metrics.Factory;
 import org.slf4j.Logger;
 
