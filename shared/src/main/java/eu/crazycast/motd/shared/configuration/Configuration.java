@@ -19,7 +19,7 @@ import java.util.List;
     "~                                  ~",
     "~           crazymotd              ~",
     "~                                  ~",
-    "~ Version: 1.0.1                   ~",
+    "~ Version: 1.0.2                   ~",
     "~ Author: kerpson                  ~",
     "~ Website: www.crazycast.eu        ~",
     "~                                  ~",

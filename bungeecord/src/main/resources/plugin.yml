@@ -1,5 +1,5 @@
 name: crazymotd
-version: 1.0.1
+version: 1.0.2
 main: eu.crazycast.motd.bungee.BungeeMotd
 author: kerpson
 website: www.crazycast.eu

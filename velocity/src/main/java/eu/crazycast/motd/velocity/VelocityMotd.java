@@ -37,7 +37,7 @@ import org.slf4j.Logger;
 @Plugin(
     id = "crazymotd",
     name = "crazymotd",
-    version = "1.0.1",
+    version = "1.0.2",
     url = "https://www.crazycast.eu",
     description = "Simple motd plugin",
     authors = {"kerpson"}
