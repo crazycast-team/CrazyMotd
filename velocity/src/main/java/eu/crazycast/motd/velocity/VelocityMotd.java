@@ -31,6 +31,7 @@ import java.io.File;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.Optional;
+import org.bstats.velocity.Metrics.Factory;
 import org.slf4j.Logger;
 
 @Plugin(
@@ -46,6 +47,7 @@ public class VelocityMotd {
   private final File configFile = new File("plugins/crazymotd", "configuration.yml");
 
   private final Logger logger;
+  private final Factory factory;
   private final ProxyServer proxyServer;
 
   private Configuration configuration;
@@ -59,13 +61,16 @@ public class VelocityMotd {
   private Optional<ScheduledTask> messageOfTheDayTask = Optional.empty();
 
   @Inject
-  public VelocityMotd(Logger logger, ProxyServer proxyServer) {
+  public VelocityMotd(Logger logger, Factory factory, ProxyServer proxyServer) {
     this.logger = logger;
+    this.factory = factory;
     this.proxyServer = proxyServer;
   }
 
   @Subscribe
   public void onProxyInitialization(ProxyInitializeEvent event) {
+    this.factory.make(this, 21090);
+
     Instant startEnableTime = Instant.now();
     this.loggerProvider = new VelocityLoggerProvider(this.logger);
     this.serverProvider = new VelocityServerProvider(this.proxyServer);

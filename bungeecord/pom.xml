@@ -84,6 +84,13 @@
       <artifactId>shared</artifactId>
       <version>1.0.1</version>
     </dependency>
+
+    <!-- BStats -->
+    <dependency>
+      <groupId>org.bstats</groupId>
+      <artifactId>bstats-bungeecord</artifactId>
+      <version>3.0.2</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -118,6 +125,10 @@
             <relocation>
               <pattern>eu.crazycast.motd.shared</pattern>
               <shadedPattern>eu.crazycast.motd.bungee.shared</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>org.bstats</pattern>
+              <shadedPattern>eu.crazycast.motd.bungee.libs.bstats</shadedPattern>
             </relocation>
             <relocation>
               <pattern>net.kyori</pattern>

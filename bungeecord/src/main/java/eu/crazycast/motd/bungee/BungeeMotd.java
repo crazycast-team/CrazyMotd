@@ -30,6 +30,7 @@ import net.kyori.adventure.platform.bungeecord.BungeeAudiences;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.api.scheduler.ScheduledTask;
+import org.bstats.bungeecord.Metrics;
 
 public class BungeeMotd extends Plugin {
 
@@ -50,6 +51,8 @@ public class BungeeMotd extends Plugin {
 
   @Override
   public void onEnable() {
+    new Metrics(this, 21091);
+
     Instant startEnableTime = Instant.now();
     this.adventure = BungeeAudiences.create(this);
     this.proxyServer = this.getProxy();
